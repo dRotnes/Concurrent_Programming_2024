@@ -61,7 +61,7 @@ Before running the implementations and tests, ensure you have the following inst
 
 2. **Navigate to the project directory:**
    ```sh
-   cd /path/to/project/assignment/cp2324/
+   cd /path/to/project/assignment/Concurrent_Programming_2024/cp2324/
 
 
 ## Running the Implementations
@@ -77,4 +77,4 @@ Before running the implementations and tests, ensure you have the following inst
 
 1. **The pseuCo CCS implementations can be found in the folder:**
     ```sh
-    /assignment/pseuco/
+    /assignment/Concurrent_Programming_2024/pseuco/

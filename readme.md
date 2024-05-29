@@ -75,6 +75,6 @@ Before running the implementations and tests, ensure you have the following inst
 
 ## Additional features
 
-The pseuCo CCS implementations can be found in the folder: 
+1. **The pseuCo CCS implementations can be found in the folder:**
     ```sh
     /assignment/pseuco/

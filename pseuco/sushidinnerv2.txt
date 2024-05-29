@@ -1,0 +1,39 @@
+C1NotInUse:= c1rf!.C1NotInUse + c1wt?.C1InUse
+C1InUse:= c1rt!.C1InUse + c1wf?.C1NotInUse
+
+C2NotInUse:= c2rf!.C2NotInUse + c2wt?.C2InUse
+C2InUse:= c2rt!.C2InUse + c2wf?.C2NotInUse
+
+C3NotInUse:= c3rf!.C3NotInUse + c3wt?.C3InUse
+C3InUse:= c3rt!.C3InUse + c3wf?.C3NotInUse
+
+C4NotInUse:= c4rf!.C4NotInUse + c4wt?.C4InUse
+C4InUse:= c4rt!.C4InUse + c4wf?.C4NotInUse
+
+C5NotInUse:= c5rf!.C5NotInUse + c5wt?.C5InUse
+C5InUse:= c5rt!.C5InUse + c5wf?.C5NotInUse
+
+P1:= chat1.P1 + c2wt!.P11
+P11:= c1wt!.P12
+P12:= eat1.c1wf!.c2wf!.P1
+
+P2:= chat2.P2 + c2wt!.P21
+P21:= c3wt!.P22
+P22:= eat2.c2wf!.c3wf!.P2
+
+P3:= chat3.P3 + c4wt!.P31
+P31:= c3wt!.P32
+P32:= eat3.c3wf!.c4wf!.P3
+
+P4:= chat4.P4 + c5wt!.P41
+P41:= c4wt!.P42
+P42:= eat4.c4wf!.c5wf!.P4
+
+P5:= chat5.P5 + c1wt!.P51
+P51:= c5wt!.P52
+P52:= eat5.c5wf!.c1wf!.P5
+
+
+SushiDinnerV2:= (P1|P2|P3|P4|P5|C1NotInUse|C2NotInUse|C3NotInUse|C4NotInUse|C5NotInUse)\{c1rf, c1rt, c1wf, c1wt, c2rf, c2rt, c2wf, c2wt, c3rf, c3rt, c3wf, c3wt, c4rf, c4rt, c4wf, c4wt, c5rf, c5rt, c5wf, c5wt}
+
+SushiDinnerV2
